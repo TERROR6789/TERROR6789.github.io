@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Terror Store</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <img src="assets/logo.png" alt="Terror Store Logo" class="logo"/>
+    <input type="text" id="searchInput" placeholder="Search products..." />
+    <button onclick="toggleAuthModal()">Login / Signup</button>
+  </header>
+
+  <main>
+    <div id="product-list" class="products"></div>
+  </main>
+
+  <div id="authModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="toggleAuthModal()">&times;</span>
+      <h2>Login</h2>
+      <input type="email" id="loginEmail" placeholder="Email" /><br/>
+      <input type="password" id="loginPassword" placeholder="Password" /><br/>
+      <button onclick="login()">Login</button>
+      <hr/>
+      <h2>Signup</h2>
+      <input type="text" id="signupName" placeholder="Full Name" /><br/>
+      <input type="email" id="signupEmail" placeholder="Email" /><br/>
+      <input type="password" id="signupPassword" placeholder="Password" /><br/>
+      <button onclick="signup()">Signup</button>
+    </div>
+  </div>
+
+  <div id="checkoutModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="toggleCheckoutModal()">&times;</span>
+      <h2>Checkout</h2>
+      <p id="checkoutProduct"></p>
+      <p>Select Payment Method:</p>
+      <ul>
+        <li>bKash: 01XXXXXXXXX</li>
+        <li>Nagad: 01XXXXXXXXX</li>
+        <li>Rocket: 01XXXXXXXXX</li>
+      </ul>
+      <a id="whatsappLink" target="_blank"><button>Order via WhatsApp</button></a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

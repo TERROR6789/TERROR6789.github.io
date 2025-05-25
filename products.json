@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Ceiling Fan",
+    "price": "2200",
+    "image": "assets/images/fan.jpg",
+    "category": "Electronics"
+  },
+  {
+    "name": "Bluetooth Speaker",
+    "price": "950",
+    "image": "assets/images/speaker.jpg",
+    "category": "Electronics"
+  },
+  {
+    "name": "Lipstick",
+    "price": "199",
+    "image": "assets/images/lipstick.jpg",
+    "category": "Cosmetics"
+  }
+]
